@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica;
+        color: white;
+        background-color: rgb(62, 62, 62);
+      }
+      .pricing-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .pricing-card {
+        background-color: aquamarine;
+        padding: 25px;
+        border-radius: 10px;
+        width: 200px;
+        text-align: center;
+        height: 250px;
+
+      }
+
+      .plan-title {
+        font-size: 23px;
+        font-weight: bold;
+      }
+
+      .plan-price {
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      ul {
+        padding: 0;
+        margin: 30px 0;
+        font-size: 18px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .btn {
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        background-color: darkblue;
+        color: white;
+        margin-top: 25px;
+      }
+
+      .btn:hover {
+        background-color: paleturquoise;
+        color: black;
+      }
+
+      #card-1 {
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+      }
+
+      #card-2 {
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+      }
+
+      #card-3 {
+        background-color: #00dbde;
+        background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+      }
+
+      h1{
+        text-align: center;
+        
+      }
+
+      @media (max-width: 750px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-card" id="card-1">
+        <div class="plan-title">Combo</div>
+        <div class="plan-price">125/mo</div>
+        <ul>
+          <li>Bandwidth - 2GB</li>
+          <li>Storage space - 3GB</li>
+          <li>Video hours - 30 minutes</li>
+        </ul>
+        <button class="btn">See Details</button>
+      </div>
+
+      <div class="pricing-card" id="card-2">
+        <div class="plan-title">Unlimited</div>
+        <div class="plan-price">185/mo</div>
+        <ul>
+          <li>Bandwidth - 20GB</li>
+          <li>Storage space - 10GB</li>
+          <li>Video hours - 3 hours</li>
+        </ul>
+        <button class="btn">See Details</button>
+      </div>
+
+      <div class="pricing-card" id="card-3">
+        <div class="plan-title">VIP</div>
+        <div class="plan-price">350/mo</div>
+        <ul>
+          <li>Bandwidth - 35GB</li>
+          <li>Storage space - 30GB</li>
+          <li>Video hours - 30 hours</li>
+        </ul>
+        <button class="btn">See Details</button>
+      </div>
+    </div>
+  </body>
+</html>
